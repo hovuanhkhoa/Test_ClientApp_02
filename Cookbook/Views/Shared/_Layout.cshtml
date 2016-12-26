@@ -27,6 +27,10 @@
                 cookie: true,
                 xfbml: true
             });
+
+            FB.getLoginStatus(function (response) {
+                console.log(response);
+            }, true);
         };
 
         // Load the SDK asynchronously
